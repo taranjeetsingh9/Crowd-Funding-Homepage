@@ -9,7 +9,7 @@ body {
   background-color: rgba(255, 255, 255, 0.937);
 }
 .navbar-default {
-  background-image: url(/images/image-hero-desktop.jpg);
+  background-image: url(./images/image-hero-desktop.jpg);
   height: 466px;
   background-size: contain;
   color: white;
