@@ -260,3 +260,73 @@ header {
 .donation-selection:focus {
   outline: none;
 }
+
+.back-this-project {
+  position: absolute;
+  width: 800px;
+  z-index: 2;
+  left: 26%;
+  padding: 4% 2%;
+  top: 200px;
+  background-color: white;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+.backProjects {
+  font-size: 24px;
+  font-weight: 600;
+}
+.back-this-project p {
+  color: #808080;
+}
+.rewards {
+  border: 1px solid #808080;
+  margin: 5%;
+  padding: 2%;
+  border-radius: 5px;
+  transition: all 0.9 ease-in;
+}
+.left {
+  float: right;
+}
+.left strong {
+  color: black;
+}
+.rewards:hover {
+  border: 2px solid #3cb4ac;
+}
+
+.rewards label {
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.pledge-amount {
+  color: #3cb4ac;
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+.rewards input[type="radio"] {
+  accent-color: rgb(55, 136, 136);
+}
+
+.close-project-info {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: none;
+  padding: 5px 12px;
+  background-color: white;
+  transition: transform all 0.3 ease-in-out;
+}
+.close-project-info:hover {
+  transform: scale(1.2);
+}
+.close-project-info:focus {
+  outline: none;
+}
+.close-project-info svg {
+  background-color: white;
+}
