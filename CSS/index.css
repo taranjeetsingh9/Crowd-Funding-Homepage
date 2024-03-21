@@ -260,3 +260,146 @@ header {
 .donation-selection:focus {
   outline: none;
 }
+/* Back this project */
+.back-this-project {
+  position: absolute;
+  width: 800px;
+  z-index: 2;
+  left: 26%;
+  padding: 4% 4%;
+  top: 200px;
+  background-color: white;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+.backProjects {
+  font-size: 24px;
+  font-weight: 600;
+}
+.back-this-project p {
+  color: #808080;
+}
+.rewards {
+  border: 2px solid #808080;
+  margin: 5% 0;
+  border-radius: 5px;
+  transition: all 0.9 ease-in;
+}
+.left {
+  float: right;
+}
+.left strong {
+  color: black;
+}
+.rewards:hover {
+  border: 2px solid #3cb4ac;
+}
+
+.rewards label {
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.pledge-amount {
+  color: #3cb4ac;
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+.rewards input[type="radio"] {
+  accent-color: rgb(51, 160, 160);
+}
+
+/*  close project */
+.close-project-info {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: none;
+  padding: 5px 12px;
+  background-color: white;
+  transition: transform all 0.3 ease-in-out;
+}
+.close-project-info:hover {
+  transform: scale(1.2);
+}
+.close-project-info:focus {
+  outline: none;
+}
+.close-project-info svg {
+  background-color: white;
+}
+
+.enterPledge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+.actionsAmount {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+
+.actionsAmount label {
+  color: #808080;
+  font-weight: 600;
+}
+.inputDonation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  border: 2px solid black;
+  width: 100px;
+  border-radius: 25px;
+}
+.inputDonation label {
+  font-size: 16px;
+  margin: 2%;
+}
+.inputDonation input {
+  border: none;
+  max-width: 40px;
+  font-size: 16px;
+}
+.inputDonation input:focus {
+  outline: none;
+}
+
+/* to disable scrolling effect on input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.continue {
+  width: 100px;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 3%;
+  font-weight: 700;
+  background-color: #3cb4ac;
+  color: white;
+  border: 2px solid #3cb4ac;
+}
+
+.continue:focus {
+  outline: none;
+}
+
+.blur {
+  opacity: 0.5;
+}
+
+.fullOpacity {
+  opacity: 1 !important;
+  z-index: 999;
+}
+.beforeSelect {
+  display: none;
+}
