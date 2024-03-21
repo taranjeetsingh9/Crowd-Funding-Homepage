@@ -9,8 +9,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <title>Frontend Mentor | Crowdfunding product page</title>
   <script src="index.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
@@ -214,87 +216,157 @@
     </p>
     <!--Now Reward-->
     <div class="rewards">
-      <input type="radio" id="noReward" name="award" value="0">
-      <label for="noReward">Pledge with no reward</label><br>
-      <p>Choose to support us without a reward if you simply believe in our project. As a backer,
-        you will be signed up to receive product updates via email.
-      </p>
+      <div style="padding: 2% 3%;">
+        <input type="radio" id="noReward" name="award" value="0" class="rewardsPledge">
+        <label for="noReward">Pledge with no reward</label><br>
+        <p>Choose to support us without a reward if you simply believe in our project. As a backer,
+          you will be signed up to receive product updates via email.
+        </p>
+      </div>
+
+      <!--Enter pledge amount-->
+      <hr class="beforeSelect">
+
+      <div class="enterPledge beforeSelect">
+
+        <div class="div label">
+          <p>Enter your pledge</p>
+        </div>
+        <div class="actionsAmount">
+
+          <div class="inputDonation">
+            <label for="noAmount">$</label>
+            <input type="number" placeholder="10" value="10" id="noAmount">
+          </div>
+
+          <button class="continue">Continue</button>
+        </div>
+
+
+
+      </div>
     </div>
 
 
     <!--Bamboo Reward-->
     <div class="rewards">
-      <div class="left">
-        <strong>101</strong>
-        <i>left</i>
+
+      <div style="padding: 2% 3%;">
+        <div class="left">
+          <strong>101</strong>
+          <i>left</i>
+        </div>
+        <input type="radio" id="bambooStand" name="award" class="rewardsPledge">
+        <label for="bambooStand"> Bamboo Stand
+          <span class="pledge-amount">Pledge $25 or more</span></label><br>
+        <p>
+          You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+          you’ll be added to a special Backer member list.
+        </p>
       </div>
-      <input type="radio" id="bambooStand" name="award" value="25">
-      <label for="bambooStand"> Bamboo Stand
-        <span class="pledge-amount">Pledge $25 or more</span></label><br>
-      <p>
-        You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-        you’ll be added to a special Backer member list.
-      </p>
+      <!--Enter pledge amount-->
+      <hr class="beforeSelect">
+
+      <div class="enterPledge beforeSelect">
+
+        <div class="div label">
+          <p>Enter your pledge</p>
+        </div>
+        <div class="actionsAmount">
+
+          <div class="inputDonation">
+            <label for="noAmount">$</label>
+            <input type="number" placeholder="25" value="25" id="bambooAwardValue">
+          </div>
+
+          <button class="continue">Continue</button>
+        </div>
+
+
+
+      </div>
     </div>
 
     <!---Black Edition Reward-->
     <div class="rewards">
-      <div class="left">
-        <strong>64</strong>
-        <i>left</i>
+      <div style="padding: 2% 3%;">
+        <div class="left">
+          <strong>64</strong>
+          <i>left</i>
+        </div>
+        <input type="radio" id="blackEdition" name="award" class="rewardsPledge">
+        <label for="blackEdition"> Black Edition Stand <span class="pledge-amount">Pledge $75 or
+            more</span></label><br>
+        <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+          member list. Shipping is included.</p>
       </div>
-      <input type="radio" id="blackEdition" name="award" value="75">
-      <label for="blackEdition"> Black Edition Stand <span class="pledge-amount">Pledge $75 or
-          more</span></label><br>
-      <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-        member list. Shipping is included.</p>
+      <!--Enter pledge amount-->
+      <hr class="beforeSelect">
+      <div class="enterPledge beforeSelect">
+
+        <div class="div label">
+          <p>Enter your pledge</p>
+        </div>
+        <div class="actionsAmount">
+
+          <div class="inputDonation">
+            <label for="noAmount">$</label>
+            <input type="number" placeholder="75" value="75" id="blackEditionValue">
+          </div>
+
+          <button class="continue">Continue</button>
+        </div>
+
+
+
+      </div>
     </div>
 
     <!---Mahogany Special Edition-->
     <div class="rewards">
-      <div class="left">
-        <strong>0</strong>
-        <i>left</i>
+      <div style="padding: 2% 3%;">
+        <div class="left">
+          <strong>0</strong>
+          <i>left</i>
+        </div>
+        <input type="radio" id="MahagonyStand" name="award" class="rewardsPledge" value="" checked="false">
+        <label for="mahoganyAward"> Mahogany Special Edition <span class="pledge-amount">Pledge $200 or
+            more</span></label><br>
+        <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+          to our Backer member list. Shipping is included.</p>
       </div>
-      <input type="radio" id="MahagonyStand" name="award" value="200">
-      <label for="mahoganyAward"> Mahogany Special Edition <span class="pledge-amount">Pledge $200 or
-          more</span></label><br>
-      <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
-        to our Backer member list. Shipping is included.</p>
+      <!--Enter pledge amount-->
+      <hr class="beforeSelect">
+
+      <div class="enterPledge beforeSelect">
+
+        <div class="div label">
+          <p>Enter your pledge</p>
+        </div>
+        <div class="actionsAmount">
+
+          <div class="inputDonation">
+            <label for="noAmount">$</label>
+            <input type="number" placeholder="200" value="200" id="mahagonyStandValue">
+          </div>
+
+          <button class="continue">Continue</button>
+        </div>
+
+
+
+      </div>
+
+
+
     </div>
 
 
 
-  </div>
 
-  <!-- Selected pledge start -->
-  <!-- Enter your pledge
-        $25
-        Continue -->
-  <!-- Selected pledge end -->
 
-  <!-- Black Edition Stand
-        Pledge $75 or more
-       
-        64 left -->
 
-  <!-- Selected pledge start -->
-  <!-- Enter your pledge
-        $75
-        Continue -->
-  <!-- Selected pledge end -->
-
-  <!-- Mahogany Special Edition
-        Pledge $200 or more
-  
-        0 left -->
-
-  <!-- Selected pledge  start -->
-  <!-- Enter your pledge
-        $200
-        Continue
-  
-        Thanks for your support!
+    <!--- Thanks for your support!
         Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
         an email once our campaign is completed.
         Got it! -->
