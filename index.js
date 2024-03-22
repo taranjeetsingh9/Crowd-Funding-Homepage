@@ -30,18 +30,20 @@ $(closeProjectinfo).click(function () {
 
 // showing input for entering pledge amount
 
-$(".rewardsPledge").change(function () {
-  let isChecked = $(this).is(":checked");
+// $(".rewardsPledge").change(function () {
+//   let isChecked = $(this).is(":checked");
 
-  if (isChecked) {
-    console.log("changed event if  triggered");
-    $(this)
-      .closest(".rewards")
-      .find(".beforeSelect")
-      .removeClass("beforeSelect");
-  } else {
-    // never occurred
-    console.log("changed event else statment triggered");
-    $(this).closest(".rewards").find(".beforeSelect").addClass("beforeSelect");
-  }
-});
+//   if (isChecked) {
+//     console.log("changed event if  triggered");
+//     $(this)
+//       .closest(".rewards")
+//       .find(".beforeSelect")
+//       .removeClass("beforeSelect");
+//   } else {
+//     // never occurred
+//     console.log("changed event else statment triggered");
+//     $(this).closest(".rewards").find(".beforeSelect").addClass("beforeSelect");
+//   }
+// });
+
+// try to do with javaScript as jquery
